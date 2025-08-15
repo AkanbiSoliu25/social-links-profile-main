@@ -1,0 +1,110 @@
+/* Commenting in CSS */
+/*
+
+single line comment: /* {content} */
+
+/* multi-line comment:
+  {content}
+  {content}
+  {content}
+  {content}
+*/
+
+:root {
+  /* color */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  /* fonts */
+  --inter: "Inter", sans-serif;
+}
+
+* {
+  /* this is a universal selector */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Everything should be stacked on top of one other */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--inter);
+  font-size: 14px;
+  background-color: var(--grey-900);
+  color: var(--white); /* text color */
+}
+
+a {
+  /* this is a css tag selector */
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.container {
+  /* this is a css property tag*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--grey-800);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.container .location {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.profile-image {
+  /* this is a css class tag*/
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.job {
+  font-size: 14px;
+  color: hsl(0, 1%, 63%);
+  font-weight: 500;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+  text-align: center;
+  background-color: var(--grey-700);
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.social-links:hover {
+  background-color: var(--green);
+}
+
+.social-links:hover a {
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
